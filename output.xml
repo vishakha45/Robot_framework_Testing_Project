@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.3 on win32)" generated="20201218 15:37:58.905" rpa="false">
+<suite id="s1" name="Action-Chains" source="C:\Users\sagar\PycharmProjects\pythonProject\Tests\action-chains.robot">
+<test id="s1-t1" name="Login on Lambdatest">
+<kw name="Open test browser" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Open the URL in Browser</arg>
+</arguments>
+<msg timestamp="20201218 15:37:59.304" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20201218 15:37:59.304" endtime="20201218 15:37:59.304"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://accounts.lambdatest.com/login</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>desired_capabilities=${CAPABILITIES}</arg>
+</arguments>
+<msg timestamp="20201218 15:37:59.305" level="INFO">Opening browser 'firefox' to base url 'https://accounts.lambdatest.com/login' through remote server at 'https://vishakha4.g:R9JIgOQLWHSbUEdebGrq4K4GX1gJJ2pRkWiKZdr4pZcwmA9iBM@hub.lambdatest.com/wd/hub'.</msg>
+<status status="PASS" starttime="20201218 15:37:59.304" endtime="20201218 15:39:27.151"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201218 15:39:27.152" endtime="20201218 15:39:27.680"></status>
+</kw>
+<status status="PASS" starttime="20201218 15:37:59.303" endtime="20201218 15:39:27.681"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${user_id}</arg>
+</arguments>
+<status status="PASS" starttime="20201218 15:39:27.681" endtime="20201218 15:39:28.744"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<status status="PASS" starttime="20201218 15:39:28.745" endtime="20201218 15:39:29.911"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${user_id}</arg>
+<arg>${lt_username}</arg>
+</arguments>
+<msg timestamp="20201218 15:39:29.913" level="INFO">Typing text 'vishakha4.g@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20201218 15:39:29.912" endtime="20201218 15:39:31.028"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${lt_password}</arg>
+</arguments>
+<msg timestamp="20201218 15:39:31.030" level="INFO">Typing text 'Lambda123' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20201218 15:39:31.029" endtime="20201218 15:39:32.112"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20201218 15:39:32.114" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20201218 15:39:32.113" endtime="20201218 15:39:33.561"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20201218 15:39:33.562" endtime="20201218 15:39:33.951"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201218 15:39:38.955" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201218 15:39:33.952" endtime="20201218 15:39:38.955"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"Click on Automation button"</arg>
+</arguments>
+<msg timestamp="20201218 15:39:38.957" level="INFO">"Click on Automation button"</msg>
+<status status="PASS" starttime="20201218 15:39:38.956" endtime="20201218 15:39:38.958"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="header"]/div[2]/div[5]</arg>
+</arguments>
+<msg timestamp="20201218 15:39:38.961" level="INFO">Clicking element 'xpath=//*[@id="header"]/div[2]/div[5]'.</msg>
+<status status="PASS" starttime="20201218 15:39:38.959" endtime="20201218 15:39:43.416"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201218 15:39:48.417" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201218 15:39:43.417" endtime="20201218 15:39:48.417"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20201218 15:39:48.417" endtime="20201218 15:39:48.781"></status>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20201218 15:39:48.782" endtime="20201218 15:39:49.339"></status>
+</kw>
+<status status="PASS" starttime="20201218 15:37:59.303" endtime="20201218 15:39:49.340" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201218 15:37:58.909" endtime="20201218 15:39:49.346"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Action-Chains">Action-Chains</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

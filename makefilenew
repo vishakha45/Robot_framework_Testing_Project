@@ -1,0 +1,3 @@
+test_OX_X_10_11_firefox_59_action-chains:
+	robot --variable platform:"macOS Sierra" --variable browserName:firefox --variable version:59.0 --variable ROBOT_BROWSER:firefox --variable visual:true --variable network:true --variable console:true Tests/action-chains.robot
+
